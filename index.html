@@ -1,46 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
 	<title>VSite</title>
 </head>
+
 <body>
-	
+
 	<header class="header">
-		<header__menu class="menu">
-			<nav class="menu__burger">
-				<span></span>
+		<div class="header__inner">
+			<nav class="header__burger">
+				<input type="checkbox" id="header__toggle">
+				<label class="header__btn" for="header__toggle">
+					<span></span>
+				</label>
 			</nav>
-			<div class="menu__logo">
-				<img src="images/main/VSite.png" alt="logo" class="logo-menu">
+			<div class="header__menu menu">
+				<div class="menu__logo">
+					<a href="#">
+						<img src="images/main/VSite.png" alt="logo" class="logo-menu">
+					</a>
+				</div>
 			</div>
-			<nav class="menu__aside aside">
-				<ul class="aside__list">
-					<li class="aside__item">
-						<a href="#" class="aside__link">
-							<img src="images/main/cart.png" alt="cart" class="aside__pic">
-						</a>
-					</li>
-					<li class="aside__item">
-						<a href="#" class="aside__link">
-							<img src="images/main/account.png" alt="profile" class="aside__pic">
-						</a>
-					</li>
-					<li class="aside__item">
-						<a href="#" class="aside__link">
-							<img src="images/main/favourite.png" alt="favorite" class="aside__pic">
-						</a>
-					</li>
-					<li class="aside__item">
-						<a href="#" class="aside__link">
-							<img src="images/main/search.png" alt="search" class="aside__pic">
-						</a>
-					</li>
-				</ul>
-			</nav>
-		</header__menu>
+			<p class="header__name">DENIM</p>
+			<div class="header__address">
+				<address class="header__city">Липецк</address>
+				<a href="#" class="header__city-choice">Адреса магазинов</a>
+			</div>
+		</div>
+		<nav class="menu__aside aside">
+			<ul class="aside__list">
+				<li class="aside__item">
+					<a href="#" class="aside__link">
+						<img src="images/main/cart.png" alt="cart" class="aside__pic">
+					</a>
+				</li>
+				<li class="aside__item">
+					<a href="#" class="aside__link">
+						<img src="images/main/account.png" alt="profile" class="aside__pic">
+					</a>
+				</li>
+				<li class="aside__item">
+					<a href="#" class="aside__link">
+						<img src="images/main/favourite.png" alt="favorite" class="aside__pic">
+					</a>
+				</li>
+				<li class="aside__item">
+					<a href="#" class="aside__link">
+						<img src="images/main/search.png" alt="search" class="aside__pic">
+					</a>
+				</li>
+			</ul>
+		</nav>
 	</header>
 
 </body>
+
 </html>
