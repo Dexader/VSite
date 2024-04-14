@@ -120,15 +120,32 @@
 			<h2 class="subscribe__title">Подписывайся <br> на наши обновления</h2>
 			<p class="suscribe__text">Узнай первым о старте <br> скидок и специальных предложений!</p>
 			<form action="#" class="subscribe__form">
-				<label for="email" class="subscribe__label"></label>
-				<input id="email" type="email" class="subscribe__input" placeholder="Введите e-mail" required>
-				<button class="subscribe__btn">Подписаться</button>
+				<input id="dynamicInput" type="email" class="subscribe__input" placeholder="Введите e-mail" required>
+				<label for="btn" class="subscribe__label"></label>
+				<button id="btn" class="subscribe__btn">Подписаться</button>
 			</form>
 			<p class="suscribe__policy">
 				Подписываясь рассылку, вы соглашаетесь <br> с <a href="#" class="subscribe__link">Политикой конфиденциальности</a>.
 			</p>
 		</div>
 	</section>
+
+	<script>
+		const input = document.getElementById('dynamicInput');
+
+			input.addEventListener('input', function () {
+				const maxLength = 200; // Максимальная длина текста, при которой размер шрифта будет минимальным
+				const minFontSize = 0; // Минимальный размер шрифта
+				const maxFontSize = 20; // Начальный размер шрифта
+				const textLength = this.value.length;
+
+				// Вычисляем размер шрифта на основе длины текста
+				const fontSize = Math.max(minFontSize, maxFontSize - (textLength / maxLength) * (maxFontSize - minFontSize));
+
+				// Применяем новый размер шрифта
+				this.style.fontSize = fontSize + 'px';
+			});
+	</script>
 
 </body>
 

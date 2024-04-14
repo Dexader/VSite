@@ -249,17 +249,24 @@ input {
 }
 
 .subscribe__form {
+	display: flex;
 	margin-bottom: 32px;
 	font-weight: 300;
 	font-size: 20px;
 	text-align: center;
 }
 
+.subscribe__label {
+	width: 100%;
+}
+
 .subscribe__input {
+	box-sizing: border-box;
 	width: 200px;
 	color: #828282;
 	margin-right: 94px;
 	padding-block: 22px;
+	text-align: center;
 }
 
 .subscribe__btn {
@@ -267,6 +274,7 @@ input {
 	background-color: #000;
 	color: #fff;
 	padding-block: 22px;
+	padding-inline: 33px;
 }
 
 .suscribe__policy {
