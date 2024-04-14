@@ -15,6 +15,7 @@ html {
 }
 
 body {
+	font-family: Roboto;
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
@@ -40,6 +41,7 @@ button {
 	cursor: pointer;
 	color: inherit;
 	background-color: inherit;
+	font-size: inherit;
 }
 
 input {
@@ -215,4 +217,69 @@ input {
 .info__link:hover {
 	color: #000;
 	text-decoration: underline;
+}
+
+/*Subscribe*/
+
+.subscibe {
+	padding-inline: 270px 123px;
+}
+
+.subscibe__inner {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-block: 44px 64px;
+	margin-bottom: 126px;
+	background-color: #F5F5F5;
+	text-align: center;
+}
+
+.subscribe__title {
+	margin-bottom: 31px;
+	font-family: Khula, sans-serif;
+	font-size: 32px;
+}
+
+.suscribe__text {
+	margin-bottom: 31px;
+	font-family: Khula, sans-serif;
+	font-size: 13px;
+}
+
+.subscribe__form {
+	margin-bottom: 32px;
+	font-weight: 300;
+	font-size: 20px;
+	text-align: center;
+}
+
+.subscribe__input {
+	width: 200px;
+	color: #828282;
+	margin-right: 94px;
+	padding-block: 22px;
+}
+
+.subscribe__btn {
+	width: 200px;
+	background-color: #000;
+	color: #fff;
+	padding-block: 22px;
+}
+
+.suscribe__policy {
+	color: #828282;
+	font-weight: 300;
+	font-size: 8px;
+}
+
+.subscribe__link {
+	text-decoration: underline;
+	transition: color .3s ease;
+}
+
+.subscribe__link:hover {
+	color: #000;
 }
