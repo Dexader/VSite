@@ -291,3 +291,68 @@ input {
 .subscribe__link:hover {
 	color: #000;
 }
+
+/*Footer*/
+
+.footer {
+	padding-left: 270px;
+}
+
+.footer__info {
+	display: flex;
+	column-gap: 302px;
+	margin-bottom: 147px;
+}
+
+.footer__link{
+	transition: text-decoration .3s ease;
+}
+
+.footer__link:hover {
+	text-decoration: underline;
+}
+
+.footer__item {
+	margin-bottom: 25px;
+	font-weight: 300;
+	font-size: 15px;
+}
+
+.footer__item h3 {
+	font-size: 16px;
+}
+
+.footer__links {
+	display: flex;
+	align-items: center;
+	margin-bottom: 61px;
+}
+
+.footer__social {
+	display: flex;
+	column-gap: 50px;
+	margin-right: 184px;
+}
+
+.footer__social-link {}
+
+.footer__social-image {}
+
+.footer__buttons {}
+
+.footer__button-link {
+	display: inline-block;
+}
+
+.footer__button.apple {
+	width: 137px;
+	height: 42px;
+	background-image: url('images/main/Apple.png');
+	margin-right: 184px;
+}
+
+.footer__button.google {
+	width: 215px;
+	height: 43px;
+	background-image: url('images/main/Google.png');
+}
