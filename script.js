@@ -1,12 +1,20 @@
 const menuBtn = document.querySelector('.burger-icon');
-const burger = document.querySelector('.burger-menu');
+const burgerMenu = document.querySelector('.burger-menu');
 
 menuBtn.addEventListener('mouseover', () => {
-	burger.classList.add('active');
+	burgerMenu.classList.add('active');
 });
 
-menuBtn.addEventListener('mouseout', () => {
-	burger.classList.remove('active');
+burgerMenu.addEventListener('mouseleave', () => {
+	burgerMenu.classList.remove('active');
+});
+
+const menuLinks = burgerMenu.querySelectorAll('.burger-menu__link');
+
+menuLinks.forEach(link => {
+	link.addEventListener('click', (e) => {
+		burgerMenu.classList.remove('active');
+	});
 });
 
 document.addEventListener('DOMContentLoaded', function() {

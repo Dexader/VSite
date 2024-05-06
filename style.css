@@ -1,5 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,regular,600&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,regular,500,600&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Khula:regular,700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Serif:regular&display=swap);
 
 *,
 *::after,
@@ -103,10 +104,14 @@ input {
 	top: 0;
 	width: 900px;
 	padding-inline: 38px 27px;
+	font-weight: 500;
+	font-size: 20px;
 	background-color: #F2F2F2;
-	opacity: 0;
-	transition: opacity 0.7s cubic-bezier(0.42, 0, 0.58, 1);
 	z-index: 1;
+}
+
+.burger-menu__link {
+	text-align: center;
 }
 
 .burger-menu__circle-pics {
@@ -124,10 +129,31 @@ input {
 	background-color: #002654;
 }
 
+.burger-menu__sale {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-color: #C75454;
+}
+
+.burger-menu__sale p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: 'Roboto Serif';
+	font-weight: 400;
+	font-size: 32px;
+	color: #f2f2f2;
+}
+
+.burger-menu__category {
+	margin-top: 12px;
+}
+
 .burger-menu.active {
 	display: block;
-	opacity: 1;
-	transition: opacity 0.5s cubic-bezier(0.42, 0, 0.58, 1);
 }
 
 .menu__logo {
