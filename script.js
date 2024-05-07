@@ -1,3 +1,5 @@
+//Burger
+
 const menuBtn = document.querySelector('.burger-icon');
 const burgerMenu = document.querySelector('.burger-menu');
 
@@ -16,6 +18,8 @@ menuLinks.forEach(link => {
 		burgerMenu.classList.remove('active');
 	});
 });
+
+//Responsive input
 
 document.addEventListener('DOMContentLoaded', function() {
 	const emailInput = document.getElementById('emailInput');

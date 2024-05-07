@@ -1,6 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,regular,500,600&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Khula:regular,700&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Serif:regular&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:200,regular&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Megrim:regular&display=swap);
 
 *,
 *::after,
@@ -407,4 +409,67 @@ input {
 	width: 215px;
 	height: 43px;
 	background-image: url('images/main/Google.png');
+}
+
+/*Cart*/
+
+.cart-logo {
+	position: absolute;
+	top: -13%;
+	text-align: center;
+	font-family: Megrim, sans-serif;
+	font-size: 608px;
+	color: #6D6D6D;
+	opacity: .1;
+
+}
+
+.cart {
+	padding: 25px 14px;
+	background: none;
+}
+
+.burger-cart {
+	padding-left: 31px;
+}
+
+.body-cart {
+	margin-top: 114px;
+	display: flex;
+	font-family: Montserrat, sans-serif;
+}
+
+.body-cart__title {
+	margin-top: 230px;
+	font-weight: 200;
+	font-size: 65px;
+	transform-origin: 0 0;
+	transform: rotate(-90deg);
+}
+
+.body-cart__content {
+	text-align: center;
+	font-weight: 400;
+}
+
+.body-cart__state {
+	font-size: 30px;
+	margin-bottom: 17px;
+}
+
+.body-cart__text {
+	font-size: 20px;
+	margin-bottom: 19px;
+}
+
+.body-cart__shopping {
+	padding-bottom: 3px;
+	font-size: 25px;
+	opacity: .6;
+	border-bottom: 1px solid #000;
+	transition: border-bottom .3s ease;
+}
+
+.body-cart__shopping:hover {
+	border-bottom: 0;
 }

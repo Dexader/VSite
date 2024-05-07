@@ -12,8 +12,9 @@
 <body>
 
 	<header class="header">
-		<div class="header__inner">
-			<div class="header__burger burger">
+		<div class="header__inner cart">
+			<div class="cart-logo">VSite</div>
+			<div class="header__burger burger burger-cart">
 				<div class="burger-icon">
 					<span></span>
 					<span></span>
@@ -54,7 +55,9 @@
 							<p class="burger-menu__category">Новинки</p>
 						</a>
 						<a href="#" class="burger-menu__link">
-							<div class="burger-menu__sale"><p>SALE&nbsp;50%</p></div>
+							<div class="burger-menu__sale">
+								<p>SALE&nbsp;50%</p>
+							</div>
 							<p class="burger-menu__category">SALE</p>
 						</a>
 						<a href="#" class="burger-menu__link">
@@ -64,60 +67,19 @@
 					</div>
 				</nav>
 			</div>
-			<div class="header__menu menu">
-				<div class="menu__logo">
-					<a href="#">
-						<img src="images/main/VSite.png" alt="logo" class="logo-menu">
-					</a>
+			<div class="header-cart__body body-cart">
+				<h1 class="body-cart__title">Корзина</h1>
+				<div class="body-cart__content">
+					<p class="body-cart__state">Корзина пуста</p>
+					<p class="body-cart__text">Для совершения заказа добавьте понравившиеся товары в корзину через каталог</p>
+					<a href="#" class="body-cart__shopping">Перейти к покупкам</a>
 				</div>
 			</div>
-			<p class="header__name">DENIM</p>
-			<div class="header__address">
-				<address class="header__city">Липецк</address>
-				<a href="#" class="header__city-choice">Адреса магазинов</a>
-			</div>
-			<ul class="header__pagination pagination">
-				<li class="pagination__item">
-					<a href="#" class="pagination__link">
-						<i class="fa-solid fa-chevron-left"></i>
-					</a>
-				</li>
-				<li class="pagination__item dot">
-					<a href="#" class="pagination__link">
-						<span class="pagination__dot"></span>
-					</a>
-				</li>
-				<li class="pagination__item dot">
-					<a href="#" class="pagination__link">
-						<span class="pagination__dot selected"></span>
-					</a>
-				</li>
-				<li class="pagination__item dot">
-					<a href="#" class="pagination__link">
-						<span class="pagination__dot"></span>
-					</a>
-				</li>
-				<li class="pagination__item dot">
-					<a href="#" class="pagination__link">
-						<span class="pagination__dot"></span>
-					</a>
-				</li>
-				<li class="pagination__item dot">
-					<a href="#" class="pagination__link">
-						<span class="pagination__dot"></span>
-					</a>
-				</li>
-				<li class="pagination__item">
-					<a href="#" class="pagination__link">
-						<i class="fa-sharp fa-solid fa-chevron-right"></i>
-					</a>
-				</li>
-			</ul>
 		</div>
 		<nav class="menu__aside aside">
 			<ul class="aside__list">
 				<li class="aside__item">
-					<a href="http://127.0.0.1:5500/cart.html" class="aside__link">
+					<a href="#" class="aside__link">
 						<img src="images/main/cart.png" alt="cart" class="aside__pic">
 					</a>
 				</li>
@@ -139,47 +101,6 @@
 			</ul>
 		</nav>
 	</header>
-
-	<section class="about">
-		<div class="about__pictures pictures">
-			<img src="images/main/he.png" alt="Man" class="pictures__item">
-			<img src="images/main/she.png" alt="Woman" class="pictures__item">
-		</div>
-		<about__info class="info">
-			<h1 class="info__title">VSite — российский лайфстайл бренд одежды для <br> молодых людей</h1>
-			<p class="info__text">
-				Бренд VSite создан студентами энтузиастами. Мы стремимся удовлетворить все потребности в гардеробе — от
-				верхней одежды до белья и аксессуаров. Для создания коллекций выбираем натуральные ткани и предлагаем
-				актуальные вещи по доступным ценам.
-			</p>
-			<p class="info__text">
-				Также мы создаем одежду для маленьких (2-6 лет) и больших (7-12 лет) детей. Это практичная верхняя
-				одежда для прогулок, а также комфортные вещи для садика и похода на кружки, основу которых составляют
-				футболки, худи и свитшоты, джоггеры и леггинсы, трикотажные платья и многое другое.
-			</p>
-			<p class="info__text">
-				Чтобы быть в курсе всех новостей и акций, рекомендуем подписаться на наши <a href="#"
-					class="info__link">рассылки</a> и <a href="#" class="info__link">телеграм</a>.
-			</p>
-			<p class="info__text">Желаем приятных покупок <br> Ваш VSite</p>
-		</about__info>
-	</section>
-
-	<section class="subscibe">
-		<div class="subscibe__inner">
-			<h2 class="subscribe__title">Подписывайся <br> на наши обновления</h2>
-			<p class="suscribe__text">Узнай первым о старте <br> скидок и специальных предложений!</p>
-			<form action="#" class="subscribe__form">
-				<input id="emailInput" type="email" class="subscribe__input" placeholder="Введите e-mail" required>
-				<label for="btn" class="subscribe__label"></label>
-				<button id="btn" class="subscribe__btn">Подписаться</button>
-			</form>
-			<p class="suscribe__policy">
-				Подписываясь рассылку, вы соглашаетесь <br> с <a href="#" class="subscribe__link">Политикой
-					конфиденциальности</a>.
-			</p>
-		</div>
-	</section>
 
 	<footer class="footer">
 		<div class="footer__info">
