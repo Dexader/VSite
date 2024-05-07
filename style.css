@@ -473,3 +473,79 @@ input {
 .body-cart__shopping:hover {
 	border-bottom: 0;
 }
+
+/*Authorization*/
+
+.auth-popup {
+	padding-block: 30px 115px;
+	padding-inline: 125px;
+	text-align: center;
+	font-family: Megrim, sans-serif;
+}
+
+.auth-popup__content {}
+
+.auth-popup__title {
+	font-size: 40px;
+	margin-bottom: 22px;
+}
+
+.auth-popup__enter {
+	font-size: 20px;
+	margin-bottom: 41px;
+}
+
+.auth-popup__list {
+	display: flex;
+	justify-content: center;
+	column-gap: 35px;
+	margin-bottom: 41px;
+}
+
+.auth-popup__sela {
+	font-size: 20px;
+	margin-bottom: 31px;
+}
+
+.auth-popup__sela span {
+	opacity: .8;
+}
+
+.auth-popup__form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.auth-popup__ways {
+	font-size: 20px;
+	margin-bottom: 30px;
+	color: rgba(0, 0, 0, .5);
+}
+
+.auth-popup__way:not(:last-child) {
+	margin-right: 96px;
+}
+
+.auth-active {
+	color: #000;
+}
+
+.auth-popup__input {
+	width: 349px;
+	padding-left: 14px;
+	padding-block: 12px;
+}
+
+.auth-popup__input:not(:last-child) {
+	margin-bottom: 41px;
+}
+
+.auth-popup__forget-pas {}
+
+.auth-popup__btn {}
+
+.auth-popup__UA {}
+
+.auth-popup__agree {}
