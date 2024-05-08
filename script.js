@@ -29,3 +29,20 @@ document.addEventListener('DOMContentLoaded', function() {
 		this.style.width = `${this.scrollWidth}px`;
 	});
 });
+
+//Popup auth
+
+const authPopup = document.querySelector('.auth-popup');
+const openBtnAuth = document.querySelector('.open-auth');
+const closeBtn = document.querySelector('.close-btn');
+const modalBackground = document.querySelector('.modal-background');
+
+openBtnAuth.addEventListener('click', () => {
+	authPopup.style.display = 'block';
+	modalBackground.style.display = 'block';
+});
+
+closeBtn.addEventListener('click', () => {
+	authPopup.style.display = 'none';
+	modalBackground.style.display = 'none';
+});
