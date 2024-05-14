@@ -131,7 +131,7 @@
 						<img src="images/main/favourite.png" alt="favorite" class="aside__pic">
 					</a>
 				</li>
-				<li class="aside__item">
+				<li class="aside__item search-icon">
 					<a href="#" class="aside__link">
 						<img src="images/main/search.png" alt="search" class="aside__pic">
 					</a>
@@ -208,8 +208,8 @@
 					<a href="#" class="auth-popup__way auth-active">Вход</a>
 					<a href="#" class="auth-popup__way">Регистрация</a>
 				</div>
-				<input type="text" class="auth-popup__input" placeholder="Регистрация">
-				<input type="text" class="auth-popup__input" placeholder="Пароль">
+				<input type="email" class="auth-popup__input" placeholder="Регистрация" required>
+				<input type="password" class="auth-popup__input" placeholder="Пароль" required>
 				<a href="#" class="auth-popup__forget-pas">Забыли пароль?</a>
 				<button class="auth-popup__btn">Войти</button>
 				<div class="auth-popup__ua">
@@ -222,6 +222,13 @@
 	</div>
 
 	<div class="modal-background"></div>
+
+	<div class="shadow"></div>
+
+	<div class="search-container">
+		<input type="text" class="search-input" placeholder="Поиск по сайту...">
+		<button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+	</div>
 
 	<footer class="footer">
 		<div class="footer__info">
