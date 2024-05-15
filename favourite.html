@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+	<title>VSite</title>
+</head>
+
+<body>
+
+	<header class="header header-favourite">
+		<div class="header__inner inner-favourite">
+			<div class="inner-favourite__wrapper">
+				<div class="header__burger burger">
+					<div class="burger-icon">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<nav class="header__burger-menu burger-menu">
+						<div class="burger-menu__circle-pics">
+							<a href="#" class="burger-menu__link">
+								<img src="images/menu/forher.png" alt="For Her" class="burger-menu__pic">
+								<p class="burger-menu__category">Для неё</p>
+							</a>
+							<a href="#" class="burger-menu__link">
+								<img src="images/menu/forhim.png" alt="For Him" class="burger-menu__pic">
+								<p class="burger-menu__category">Для него</p>
+							</a>
+							<a href="#" class="burger-menu__link">
+								<img src="images/menu/kids.png" alt="For Kids" class="burger-menu__pic">
+								<p class="burger-menu__category">Дети</p>
+							</a>
+						</div>
+						<div class="burger-menu__square-pics">
+							<a href="#" class="burger-menu__link">
+								<img src="images/menu/brand1.png" alt="Woman dressed in green" class="burger-menu__pic">
+							</a>
+							<a href="#" class="burger-menu__link">
+								<img src="images/menu/brand2.png" alt="Man 1" class="burger-menu__pic">
+							</a>
+							<a href="#" class="burger-menu__link">
+								<img src="images/menu/brand3.png" alt="Woman dressed in white" class="burger-menu__pic">
+							</a>
+							<a href="#" class="burger-menu__link">
+								<img src="images/menu/brand4.png" alt="Man 2" class="burger-menu__pic">
+							</a>
+						</div>
+						<div class="burger-menu__circle-pics">
+							<a href="#" class="burger-menu__link">
+								<img src="images/menu/new.png" alt="People" class="burger-menu__pic">
+								<p class="burger-menu__category">Новинки</p>
+							</a>
+							<a href="#" class="burger-menu__link">
+								<div class="burger-menu__sale">
+									<p>SALE&nbsp;50%</p>
+								</div>
+								<p class="burger-menu__category">SALE</p>
+							</a>
+							<a href="#" class="burger-menu__link">
+								<img src="images/menu/beauty.png" alt="Bar" class="burger-menu__pic">
+								<p class="burger-menu__category">Beauty</p>
+							</a>
+						</div>
+					</nav>
+				</div>
+				<div class="header__menu menu">
+					<a href="#" class="menu__logo">
+						<h1 class="logo-favourite">VSite</h1>
+					</a>
+				</div>
+			</div>
+		</div>
+		<h1 class="favourite__title">Избранное</h1>
+		<nav class="menu__aside aside">
+			<ul class="aside__list">
+				<li class="aside__item">
+					<a href="http://127.0.0.1:5500/cart.html" class="aside__link">
+						<img src="images/main/cart.png" alt="cart" class="aside__pic">
+					</a>
+				</li>
+				<li class="aside__item open-auth">
+					<a href="#" class="aside__link">
+						<img src="images/main/account.png" alt="profile" class="aside__pic">
+					</a>
+				</li>
+				<li class="aside__item">
+					<a href="#" class="aside__link">
+						<img src="images/main/favourite.png" alt="favorite" class="aside__pic">
+					</a>
+				</li>
+				<li class="aside__item search-icon">
+					<a href="#" class="aside__link">
+						<img src="images/main/search.png" alt="search" class="aside__pic">
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<section class="favourite__content">
+		<p class="favourite__state">Сейчас у вас ничего нет в «Избранном»</p>
+		<div class="favourite__text">
+			<p>Чтобы добавить понравившийся товар в «Избранное», отметьте его «сердцем»!</p>
+			<p>Это можно сделать как со страницы товара, так и из общего каталога.</p>
+		</div>
+		<a href="#" class="favourite__shopping">Перейти к покупкам</a>
+	</section>
+
+	<section class="favourite__popular popular">
+		<h2 class="popular__title">Популярные товары</h2>
+		<popular__card class="card">
+			<a href="#" class="card__item">
+				<img src="images/favourite/green.png" alt="A woman wears green" class="card__pic">
+				<p class="card__name">РУБАШКА ИЗ СМЕСОВОГО ЛЬНА</p>
+				<p class="card__price">5.999 R</p>
+			</a>
+			<a href="#" class="card__item">
+				<img src="images/favourite/blue.png" alt="A woman wears blue" class="card__pic">
+				<p class="card__name">РУБАШКА ИЗ СМЕСОВОГО ЛЬНА</p>
+				<p class="card__price">5.999 R</p>
+			</a>
+			<a href="#" class="card__item">
+				<img src="images/favourite/white.png" alt="A woman wears white" class="card__pic">
+				<p class="card__name">РУБАШКА ИЗ СМЕСОВОГО ЛЬНА</p>
+				<p class="card__price">5.999 R</p>
+			</a>
+		</popular__card>
+	</section>
+
+	<div class="auth-popup">
+		<div class="auth-popup__content">
+			<h1 class="auth-popup__title">Личный кабинет</h1>
+			<p class="auth-popup__enter">Войти через соцсети</p>
+			<ul class="auth-popup__list">
+				<li class="auth-popup__item">
+					<a href="#" class="auth-popup__link">
+						<img src="images/auth/VK-Circled.png" alt="VK" class="auth-popup__pic">
+					</a>
+				</li>
+				<li class="auth-popup__item">
+					<a href="#" class="auth-popup__link">
+						<img src="images/auth/Odnoklassnik-Circled.png" alt="OK" class="auth-popup__pic">
+					</a>
+				</li>
+				<li class="auth-popup__item">
+					<a href="#" class="auth-popup__link">
+						<img src="images/auth/Google.png" alt="Google" class="auth-popup__pic">
+					</a>
+				</li>
+			</ul>
+			<p class="auth-popup__sela">Через аккаунт <span>VSela</span></p>
+			<form action="" class="auth-popup__form">
+				<div class="auth-popup__ways">
+					<a href="#" class="auth-popup__way auth-active">Вход</a>
+					<a href="#" class="auth-popup__way">Регистрация</a>
+				</div>
+				<input type="email" class="auth-popup__input" placeholder="Регистрация" required>
+				<input type="password" class="auth-popup__input" placeholder="Пароль" required>
+				<a href="#" class="auth-popup__forget-pas">Забыли пароль?</a>
+				<button class="auth-popup__btn">Войти</button>
+				<div class="auth-popup__ua">
+					<p class="auth-popup__agree">нажимая на кнопку “Войти”,</p>
+					<p class="auth-popup__agree">Вы соглашаетесь на обработку <a href="#">персональных данных</a></p>
+				</div>
+			</form>
+			<button class="close-btn">Закрыть</button>
+		</div>
+	</div>
+
+	<div class="modal-background"></div>
+
+	<div class="shadow"></div>
+
+	<div class="search-container">
+		<input type="text" class="search-input" placeholder="Поиск по сайту...">
+		<button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+	</div>
+
+	<footer class="footer">
+		<div class="footer__info">
+			<ul class="footer__list">
+				<li class="footer__item">
+					<h3 class="footer__list-title">ПОКУПАТЕЛЯМ</h3>
+				</li>
+				<li class="footer__item">
+					<a href="" class="footer__link">Доставка</a>
+				</li>
+				<li class="footer__item">
+					<a href="" class="footer__link">Отследить заказ</a>
+				</li>
+				<li class="footer__item">
+					<a href="" class="footer__link">Оплата</a>
+				</li>
+				<li class="footer__item">
+					<a href="" class="footer__link">Возврат и обмен</a>
+				</li>
+				<li class="footer__item">
+					<a href="" class="footer__link">Акции и конкурсы</a>
+				</li>
+				<li class="footer__item">
+					<a href="" class="footer__link">Таблицы размеров</a>
+				</li>
+				<li class="footer__item">
+					<a href="" class="footer__link">Правила продажи</a>
+				</li>
+				<li class="footer__item">
+					<a href="" class="footer__link">Оформление заказа</a>
+				</li>
+				<li class="footer__item">
+					<a href="" class="footer__link">Уход за товаром</a>
+				</li>
+				<li class="footer__item">
+					<a href="" class="footer__link">Политика конфиденциальности</a>
+				</li>
+				<li class="footer__item">
+					<a href="" class="footer__link">Программа лояльности</a>
+				</li>
+			</ul>
+			<ul class="footer__list">
+				<li class="footer__item footer__item-title">
+					<h3>О КОМПАНИИ</h3>
+				</li>
+				<li class="footer__item">
+					<a href="" class="footer__link">О нас</a>
+				</li>
+				<li class="footer__item">
+					<a href="" class="footer__link">Вакансии</a>
+				</li>
+				<li class="footer__item">
+					<a href="" class="footer__link">Контакты</a>
+				</li>
+			</ul>
+		</div>
+		<div class="footer__links">
+			<div class="footer__social">
+				<a href="#" class="footer__social-link">
+					<img src="images/main/Telegram.png" alt="Telegram" class="footer__social-image">
+				</a>
+				<a href="#" class="footer__social-link">
+					<img src="images/main/VK.png" alt="VKontakte" class="footer__social-image">
+				</a>
+				<a href="#" class="footer__social-link">
+					<img src="images/main/Instagram.png" alt="Instagram" class="footer__social-image">
+				</a>
+			</div>
+			<div class="footer__buttons">
+				<a href="#" class="footer__button-link">
+					<button class="footer__button apple"></button>
+				</a>
+				<a href="#" class="footer__button-link">
+					<button class="footer__button google"></button>
+				</a>
+			</div>
+		</div>
+	</footer>
+
+	<script src="script.js"></script>
+
+</body>
+
+</html>

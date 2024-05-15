@@ -158,6 +158,10 @@ input {
 	display: block;
 }
 
+.menu {
+	display: flex;
+}
+
 .menu__logo {
 	max-width: 344px;
 	margin-left: 42px;
@@ -472,6 +476,107 @@ input {
 
 .body-cart__shopping:hover {
 	border-bottom: 0;
+}
+
+/*Favourite*/
+
+.header-favourite {
+	display: flex;
+	align-items: center;
+}
+
+.inner-favourite {
+	margin-top: 14px;
+	align-items: center;
+	padding-inline: 45px 371px;
+	background: none;
+}
+
+.inner-favourite__wrapper {
+	display: flex;
+}
+
+.logo-favourite {
+	font-family: Megrim, sans-serif;
+	font-size: 50px;
+}
+
+.favourite__title {
+	margin-top: -3px;
+	font-family: Roboto, sans-serif;
+	font-size: 50px;
+	font-weight: 300;
+}
+
+.favourite__content {
+	text-align: center;
+	margin-bottom: 104px;
+}
+
+.favourite__state {
+	font-family: Roboto, sans-serif;
+	font-weight: 300;	
+	font-size: 30px;
+	margin-bottom: 11px;
+}
+
+.favourite__text {
+	font-family: Roboto, sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+	margin-bottom: 47px;
+	color: rgba(0, 0, 0, .7);
+}
+
+.favourite__shopping {
+	padding-bottom: 4px;
+	font-family: Montserrat, sans-serif;
+	font-weight: 400;
+	font-size: 25px;
+	border-bottom: 1px solid rgba(0, 0, 0, .6);
+	color: rgba(0, 0, 0, .6);
+	transition: all .3s ease;
+}
+
+.favourite__shopping:hover {
+	border-bottom: none;
+	color: #000;
+}
+
+.popular {
+	font-family: Montserrat, sans-serif;
+	font-weight: 400;
+	text-align: center;
+	margin-bottom: 185px;
+}
+
+.popular__title {
+	margin-bottom: 63px;
+	font-size: 35px;
+}
+
+.card {
+	display: flex;
+	justify-content: center;
+	column-gap: 70px;
+	font-size: 12px;
+	text-align: left;
+}
+
+.card__item {
+	transition: box-shadow .3s ease;
+}
+
+.card__item:hover {
+	box-shadow: 0 0 6px 3px rgba(0,0,0,.5);
+}
+
+.card__pic {
+	margin-bottom: 15px;
+}
+
+.card__name {
+	margin-bottom: 7px;
 }
 
 /*Search*/
