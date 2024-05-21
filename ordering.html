@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Ordering</title>
+</head>
+<body>
+	
+	<header class="header-ordering">
+		<p class="header-ordering__logo">VSite</p>
+		<h1 class="header-ordering__title">Оформление заказа</h1>
+	</header>
+
+	<main class="main-odering">
+		<fieldset class="main-odering__basic basic">
+			<form action="#" method="get" class="basic__form">
+				<label for="first-name" class="basic__label">
+					<p class="basic__label-name label-name">Имя</p>
+					<input type="text" name="first-name" id="first-name" class="basic__input input" placeholder="Введите имя">
+				</label>
+				<label for="last-name" class="basic__label">
+					<p class="basic__label-name label-name">Фамилия</p>
+					<input type="text" name="last-name" id="last-name" class="basic__input input" placeholder="Введите фамилию">
+				</label>
+				<label for="phone" class="basic__label">
+					<p class="basic__label-name label-name">Телефон</p>
+					<input type="tel" name="phone" id="phone" class="basic__input input" placeholder="+7 900 999 99 99">
+				</label>
+				<label for="address" class="basic__label">
+					<p class="basic__label-name label-name">Населеный пункт</p>
+					<input type="text" name="address" id="address" class="basic__input input" placeholder="Москва">
+				</label>
+			</form>
+		</fieldset>
+
+		<fildset class="main-odering__delivery delivery">
+			<legend class="delivery__category">Способ доставки</legend>
+			<form action="#" method="get" class="delivery__form form-radio">
+				<div class="delivery__block">
+					<input type="radio" id="courier" value="courier" name="delivery" class="delivery__input input-radio" checked>
+					<label for="courier" class="delivery__label">Курьерская доставка</label>
+				</div>
+				<div class="delivery__block">
+					<input type="radio" id="pickup" value="pickup" name="delivery" class="delivery__input input-radio">
+					<label for="pickup" class="delivery__label">Самовывоз</label>
+				</div>
+				<div class="delivery__conditions conditions">
+					<p class="delivery__text">Из магазина, сегодня в течении 4 часов, бесплатно</p>
+					<p class="delivery__text">Из пункта выдачи или постамата</p>
+				</div>
+				<div class="delivery__block">
+					<input type="radio" id="mail" value="mail" name="delivery" class="delivery__input input-radio">
+					<label for="mail" class="delivery__label">Почтовая доставка</label>
+				</div>
+			</form>
+		</fildset>
+
+		<fieldset class="main-ordering__address address">
+			<form action="#" method="get" class="address__form">
+				<label for="street" class="address__label">
+					<p class="address__label-name label-name">Адрес</p>
+					<div class="address__inner">
+						<input type="text" name="street" id="street" class="address__input input" placeholder="Улица">
+						<input type="text" name="building" class="address__input input input-short" placeholder="Дом">
+						<input type="text" name="apartment" class="address__input input input-short" placeholder="Квартира/офис">
+					</div>
+				</label>
+			</form>
+		</fieldset>
+
+		<fieldset class="main-ordering__payment payment">
+			<legend class="payment__category">Способ оплаты</legend>
+			<form action="#" method="get" class="payment__form form-radio">
+				<div class="payment__block">
+					<input type="radio" name="payment" id="personally" value="personally" class="payment__input input-radio" checked>
+					<label for="personally" class="payment__label">При получении</label>
+				</div>
+				<div class="payment__block">
+					<input type="radio" name="payment" id="online" value="online" class="payment__input input-radio">
+					<label for="online" class="payment__label">Онлайн на сайте</label>
+				</div>
+				<p class="payment__conditions conditions">-5% скидка на товары в корзине</p>
+				<div class="payment__block">
+					<input type="radio" name="payment" id="fps" value="fps" class="payment__input input-radio">
+					<label for="fps" class="payment__label">СБП</label>
+				</div>
+				<p class="payment__conditions conditions">-5% скидка на товары в корзине</p>
+			</form>
+		</fieldset>
+
+		<section class="making-an-order">
+			<div class="making-an-order__info">
+				<p>Товары, 2 шт.</p>
+				<p>40,898 R</p>
+			</div>
+			<div class="making-an-order__promo">
+				<input type="text" name="promo" class="making-an-order__input" placeholder="Промокод">
+				<button class="making-an-order__btn-promo">Применить</button>
+			</div>
+			<div class="making-an-order__info sum">
+				<p>Итого</p>
+				<p>40,898 R</p>
+			</div>
+			<button class="making-an-order__btn">Оформить заказ</button>
+		</section>
+	</main>
+
+</body>
+</html>

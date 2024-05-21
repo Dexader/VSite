@@ -49,6 +49,83 @@ button {
 
 input {
 	font-size: inherit;
+	box-sizing: border-box;
+}
+
+/*Common*/
+
+.label-name {
+	width: 158px;
+}
+
+.input {
+	width: 537px;
+	padding-left: 35px;
+	padding-block: 16px;
+	outline: 1px solid rgba(0, 0, 0, .4);
+}
+
+.input-radio:checked,
+.input-radio:not(:checked) {
+	position: absolute;
+	left: -9999px;
+}
+
+.input-radio:checked+label,
+.input-radio:not(:checked)+label {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	padding-left: 40px;
+	line-height: 20px;
+	cursor: pointer;
+}
+
+.input-radio:checked+label::before,
+.input-radio:not(:checked)+label::before {
+	content: '';
+	position: absolute;
+	display: block;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 30px;
+	height: 30px;
+	border: 1px solid #000;
+	background-color: #fff;
+	border-radius: 100%;
+}
+
+.input-radio:checked+label::after,
+.input-radio:not(:checked)+label::after {
+	content: '';
+	position: absolute;
+	transition: all .3s ease;
+	left: 6px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #000;
+}
+
+.input-radio:checked+label::after {
+	opacity: 1;
+}
+
+.input-radio:not(:checked)+label::after {
+	opacity: 0;
+}
+
+.form-radio {
+	padding-left: 172px;
+}
+
+.conditions {
+	font-size: 13px;
+	color: rgba(0, 0, 0, .6);
 }
 
 /*Header*/
@@ -742,4 +819,179 @@ input {
 	width: 100%;
 	height: 100%;
 	backdrop-filter: blur(5px);
+}
+
+/*Ordering*/
+
+.header-ordering {
+	position: relative;
+	display: flex;
+	padding: 38px 59px;
+	justify-content: center;
+	margin-bottom: 88px;
+	font-family: Roboto, sans-serif;
+	font-weight: 300;
+}
+
+.header-ordering__logo {
+	position: absolute;
+	left: 59px;
+	font-family: Megrim, sans-serif;
+	font-weight: 400;
+	font-size: 50px;
+}
+
+.header-ordering__title {
+	font-weight: 300;
+	font-size: 50px;
+}
+
+.main-odering {
+	display: flex;
+	flex-direction: column;
+	padding-left: 19.375vw;
+	padding-bottom: 137px;
+	font-size: 30px;
+	font-weight: 300;
+}
+
+.basic {
+	margin-bottom: 104px;
+}
+
+.basic__form {
+	display: flex;
+	flex-direction: column;
+	row-gap: 49px;
+}
+
+.basic__label {
+	display: flex;
+	align-items: center;
+	column-gap: 12px;
+}
+
+.delivery {
+	margin-bottom: 99px;
+}
+
+.delivery__category {
+	margin-bottom: 44px;
+}
+
+.delivery__block:first-of-type {
+	margin-bottom: 20px;
+}
+
+.delivery__block:nth-of-type(2) {
+	margin-bottom: 6px;
+}
+
+.delivery__conditions {
+	margin-bottom: 25px;
+}
+
+/*Address*/
+
+.address {
+	margin-bottom: 144px;
+}
+
+.address__label {
+	display: flex;
+	column-gap: 12px;
+}
+
+.address__input {
+	display: block;
+}
+
+.input-short {
+	display: inline-block;
+	width: 260px;
+	margin-top: 25px;
+}
+
+.input-short:nth-child(2) {
+	margin-right: 11px;
+}
+
+/*Payment*/
+
+.payment {
+	margin-bottom: 57px;
+}
+
+.payment__category {
+	margin-bottom: 52px;
+}
+
+.payment__block {
+	margin-bottom: 6px;
+}
+
+.payment__block:first-of-type {
+	margin-bottom: 32px;
+}
+
+.payment__conditions {
+	margin-bottom: 26px;
+}
+
+/*Making an order*/
+
+.making-an-order {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 760px;
+	padding-block: 41px 22px;
+	padding-inline: 51px 130px;
+	background-color: #EEEEEE;
+	box-sizing: border-box;
+}
+
+.making-an-order__info {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	font-size: 28px;
+	margin-bottom: 26px;
+}
+
+.sum {
+	font-weight: 500;
+	margin-bottom: 24px;
+}
+
+.making-an-order__promo {
+	display: flex;
+	align-items: center;
+	margin-bottom: 33px;
+}
+
+.making-an-order__input {
+	width: 310px;
+	margin-right: 33px;
+	padding-left: 18px;
+	padding-block: 7px;
+	outline: 1px solid #a6a6a6;
+	background-color: inherit;
+}
+
+.making-an-order__btn-promo {
+	width: 128px;
+	padding-block: 12px 14px;
+	font-size: 20px;
+	background-color: #000;
+	color: #fff;
+}
+
+.making-an-order__btn {
+	width: 380px;
+	margin: 0 auto;
+	padding-block: 12px 13px;
+	background-color: #30AA52;
+	font-weight: 400;
+	font-size: 28px;
 }
