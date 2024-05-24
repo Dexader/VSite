@@ -45,6 +45,8 @@ button {
 	color: inherit;
 	background-color: inherit;
 	font-size: inherit;
+	font-family:inherit;
+	font-weight: inherit;
 }
 
 input {
@@ -625,6 +627,7 @@ input {
 	font-weight: 400;
 	text-align: center;
 	margin-bottom: 185px;
+	padding-inline: 13.88888vw;
 }
 
 .popular__title {
@@ -634,13 +637,14 @@ input {
 
 .card {
 	display: flex;
-	justify-content: center;
+	flex-wrap: wrap;
 	column-gap: 70px;
 	font-size: 12px;
 	text-align: left;
 }
 
 .card__item {
+	display: block;
 	transition: box-shadow .3s ease;
 }
 
@@ -650,6 +654,9 @@ input {
 
 .card__pic {
 	margin-bottom: 15px;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
 }
 
 .card__name {
@@ -994,4 +1001,170 @@ input {
 	background-color: #30AA52;
 	font-weight: 400;
 	font-size: 28px;
+}
+
+/*For Her*/
+
+.forher {
+	display: flex;
+	padding-inline: 4.513888vw 8.472222vw;
+	column-gap: 21px;
+}
+
+.filter-menu {
+	font-family: Montserrat, sans-serif;
+	font-weight: 400;
+	font-size: 23px;
+}
+
+.filter-menu__button {
+	width: 178px;
+	display: flex;
+	column-gap: 12px;
+	padding-left: 16px;
+	padding-block: 11px 12px;
+	background-color: #252525;
+	color: #fff;
+	margin-bottom: 58px;
+}
+
+.filter-menu__item:not(:last-child) {
+	margin-bottom: 27px;
+}
+
+.forher__card {
+	column-gap: 65px;
+	row-gap: 69px;
+	margin-bottom: 127px;
+}
+
+.card__inner {
+	transition: box-shadow .3s ease;
+}
+
+.card__inner:hover {
+	box-shadow: 0 0 6px 3px rgba(0, 0, 0, .5);
+}
+
+.forher__card .card__item:hover {
+	box-shadow: none;
+}
+
+.card__colors {
+	display: flex;
+	column-gap: 6px;
+	margin-top: 7px;
+}
+
+.card__color {
+	display: block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	box-sizing: border-box;
+}
+
+.gray-stroke {
+	background-color: #EFEBE0;
+	border: 1px solid #000;
+}
+
+.black-1 {
+	background-color: #252525;
+}
+
+.beige {
+	background-color: #FFE4B5;
+}
+
+.lilac {
+	background-color: #572F6F;
+}
+
+.white-stroke {
+	background-color: #FFFFF1;
+	border: 1px solid #000;
+}
+
+.black-2 {
+	background-color: #252026;
+}
+
+.laurel-stroke {
+	background-color: #7D9478;
+	border: 1px solid #000;
+}
+
+.gray {
+	background-color: #E1D9CC;
+}
+
+.black-3 {
+	background-color: #130E14;
+}
+
+.green {
+	background-color: #397153;
+}
+
+.seagull {
+	background-color: #73BDE4;
+}
+
+.hibiscus {
+	background-color: #B32561;
+}
+
+.green-stroke {
+	background-color: #48B531;
+	border: 1px solid #000;
+}
+
+.royal-blue {
+	background-color: #4743F4;
+}
+
+.black {
+	background-color: #000000;
+}
+
+.pelorous {
+	background-color: #34B5B5;
+}
+
+.alizarin-crimson {
+	background-color: #E11E31;
+}
+
+.chartreuse {
+	background-color: #7FFF00;
+}
+
+.yellow {
+	background-color: #FFFF00;
+}
+
+.forher__pagination {
+	position: static;
+	left: 115px;
+	bottom: 48px;
+	display: flex;
+	justify-content: center;
+	column-gap: 55px;
+	width: 100%;
+	margin-bottom: 127px;
+	font-family: Montserrat, sans-serif;
+	font-size: 23px;
+}
+
+.fa-solid {
+	font-size: 23px;
+}
+
+.fa-chevron-left {
+	color: #000;
+}
+
+.fa-chevron-right {
+	color: #000;
 }
